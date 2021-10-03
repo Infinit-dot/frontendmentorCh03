@@ -1,119 +1,127 @@
-/* font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif; */
 
 :root {
-    --primary-color-orange:hsl(31, 77%, 52%);
-    --primary-color-cyan-100:hsl(184, 100%, 22%);
-    --primary-color-cyan-200:hsl(179, 100%, 13%);
-    --neutral-color-white:hsla(0, 0%, 100%, 0.75);
-    --neutral-color-gray:hsl(0, 0%, 95%);
-    --brightBlue:hsl(229, 80%, 48%);
+  --primary-color-orange: hsl(31, 77%, 52%);
+  --primary-color-cyan-100: hsl(184, 100%, 22%);
+  --primary-color-cyan-200: hsl(179, 100%, 13%);
+  --neutral-color-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-color-gray: hsl(0, 0%, 95%);
+  --brightBlue: hsl(229, 80%, 48%);
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-html{
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--neutral-color-white);
-    line-height: 1.5;
+html,
+body,
+main {
+  height: 100vh;
+  width: 100%;
+}
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--neutral-color-white);
+  line-height: 1.5;
 }
 body {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--neutral-color-gray);
+  background-color: var(--neutral-color-gray);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 .container {
-    max-width: 380px;
-    width: 85%;
-    margin:2em auto;
+  max-width: 380px;
+  width: 85%;
+  margin: 2em auto;
 }
 
 .card {
-    padding: 3em;
+  padding: 3em;
 }
 
 .card--orange {
-    background-color: var(--primary-color-orange);
-    border-radius: 10px 10px 0  0;
+  background-color: var(--primary-color-orange);
+  border-radius: 10px 10px 0 0;
 }
 .card--light-green {
-    background-color: var(--primary-color-cyan-100);
+  background-color: var(--primary-color-cyan-100);
 }
 .card--dark-green {
-    background-color: var(--primary-color-cyan-200);
-    border-radius: 0 0 10px 10px;
+  background-color: var(--primary-color-cyan-200);
+  border-radius: 0 0 10px 10px;
 }
 .card__title {
-    text-transform: uppercase;
-    color: var(--neutral-color-gray);
-    margin: 1em 0;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 1.867rem;
+  text-transform: uppercase;
+  color: var(--neutral-color-gray);
+  margin: 1em 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.867rem;
 }
 .btn {
-    display: inline-block;
-    padding: 0.6em 1.7em;
-    background-color: var(--neutral-color-gray);
-    border-radius: 40px;
-    margin-top: 2em;
+  display: inline-block;
+  padding: 0.6em 1.7em;
+  background-color: var(--neutral-color-gray);
+  border-radius: 40px;
+  margin-top: 2em;
 }
 
 .btn--orange {
-    color: var(--primary-color-orange);
+  color: var(--primary-color-orange);
 }
 .btn--light-green {
-    color: var(--primary-color-cyan-100);
+  color: var(--primary-color-cyan-100);
 }
 .btn--dark-green {
-    color: var(--primary-color-cyan-200);
+  color: var(--primary-color-cyan-200);
 }
 
 .attribution {
-    display: block;
-    position: fixed;
-    bottom: 1em;
-    margin: 0 auto;
-    font-size: 11px;
-    text-align: center;
-    width: 100%;
-    color: black;
-  }
-  .attribution a {
-    color: var(--brightBlue);
-  }
+  display: block;
+  position: fixed;
+  bottom: 1em;
+  margin: 0 auto;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+.attribution a {
+  color: var(--brightBlue);
+}
 
 @media screen and (min-width: 850px) {
-    .container {
-       display: flex;
-       max-width: 900px;
-
-    }
-    .card {
-        padding: 3.2em;
-    }
-    .card__title {
-        margin: 0.8em 0;
-        font-size: 2.4rem;
-    }
-    .btn {
-        padding: 0.7em 1.7em;
-        margin-top: 5.5em;
-    }
-    .card--orange {
-        background-color: var(--primary-color-orange);
-        border-radius: 10px 0 0 10px;
-    }
-    .card--dark-green {
-        background-color: var(--primary-color-cyan-200);
-        border-radius: 0 10px 10px 0;
-    }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    display: flex;
+    max-width: 900px;
+    height: max-content;
+    margin: 0;
+  }
+  .card {
+    padding: 3.2em;
+  }
+  .card__title {
+    margin: 0.8em 0;
+    font-size: 2.4rem;
+  }
+  .btn {
+    padding: 0.7em 1.7em;
+    margin-top: 5.5em;
+  }
+  .card--orange {
+    background-color: var(--primary-color-orange);
+    border-radius: 10px 0 0 10px;
+  }
+  .card--dark-green {
+    background-color: var(--primary-color-cyan-200);
+    border-radius: 0 10px 10px 0;
+  }
 }
