@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (<https://infinit-dot.github.io/frontendmentorCh03/>)
+- Solution URL: (<https://github.com/Infinit-dot/frontendmentorCh03/>)
 - Live Site URL: (<https://infinit-dot.github.io/frontendmentorCh03/>)
 
 ### Built with
