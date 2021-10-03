@@ -7,6 +7,7 @@ font-family: 'Lexend Deca', sans-serif; */
     --primary-color-cyan-200:hsl(179, 100%, 13%);
     --neutral-color-white:hsla(0, 0%, 100%, 0.75);
     --neutral-color-gray:hsl(0, 0%, 95%);
+    --brightBlue:hsl(229, 80%, 48%);
 }
 
 *{
@@ -22,6 +23,8 @@ html{
     line-height: 1.5;
 }
 body {
+    height: 100vh;
+    width: 100%;
     background-color: var(--neutral-color-gray);
 }
 
@@ -29,34 +32,88 @@ a{
     text-decoration: none;
 }
 .container {
-    max-width: 480px;
+    max-width: 380px;
     width: 85%;
-    margin: auto;
+    margin:2em auto;
 }
 
 .card {
-    padding: 2.5em;
+    padding: 3em;
 }
 
 .card--orange {
     background-color: var(--primary-color-orange);
+    border-radius: 10px 10px 0  0;
 }
 .card--light-green {
     background-color: var(--primary-color-cyan-100);
 }
 .card--dark-green {
     background-color: var(--primary-color-cyan-200);
+    border-radius: 0 0 10px 10px;
 }
 .card__title {
     text-transform: uppercase;
     color: var(--neutral-color-gray);
-    margin: 1.5em 0;
+    margin: 1em 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.867rem;
 }
 .btn {
     display: inline-block;
-    font-family: 'Big Shoulders Display', cursive;
-    padding: 0.5em 1.5em;
+    padding: 0.6em 1.7em;
     background-color: var(--neutral-color-gray);
     border-radius: 40px;
     margin-top: 2em;
+}
+
+.btn--orange {
+    color: var(--primary-color-orange);
+}
+.btn--light-green {
+    color: var(--primary-color-cyan-100);
+}
+.btn--dark-green {
+    color: var(--primary-color-cyan-200);
+}
+
+.attribution {
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    margin: 0 auto;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    color: black;
+  }
+  .attribution a {
+    color: var(--brightBlue);
+  }
+
+@media screen and (min-width: 850px) {
+    .container {
+       display: flex;
+       max-width: 900px;
+
+    }
+    .card {
+        padding: 3.2em;
+    }
+    .card__title {
+        margin: 0.8em 0;
+        font-size: 2.4rem;
+    }
+    .btn {
+        padding: 0.7em 1.7em;
+        margin-top: 5.5em;
+    }
+    .card--orange {
+        background-color: var(--primary-color-orange);
+        border-radius: 10px 0 0 10px;
+    }
+    .card--dark-green {
+        background-color: var(--primary-color-cyan-200);
+        border-radius: 0 10px 10px 0;
+    }
 }
